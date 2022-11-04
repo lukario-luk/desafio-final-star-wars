@@ -1,73 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@font-face {
+    font-family:"sovereign" ;
+    src: url(./assets/Font/Sovereign.otf) format("opentype"),url(./assets/Font/Sovereign.ttf) format(truetype);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Libertad-Medium";
+    src: url(./assets/Font/Libertad-Medium.otf) format("opentype");
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
---header:40vw;
+.f-open-sans{
+    font-family:'Open Sans';
+    font-weight: 400;
+    letter-spacing: 0px;
 }
-
 .header-container {
-    width: 100vw;
-    height: var(--header);
-
-    background-image: url("assets/star uó topo@2x.png");
+    width: 100%;
+    height: 43.489vw;
+    display: flex;
+    position: relative;
+    background-image: url("assets/star uó topo.png");
     background-repeat: no-repeat;
     background-position:center; 
     background-size: cover;
-
-    display: flex;
-    justify-content:center;
-    align-items: center;
-
-    position: relative;
 }
-
-.box-left {
-    width: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    
-    padding-top: 9.5%;
-    padding-right: 5%
-}
-
-.box-right {
-    width: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    
-    padding-top: 9.5%;
-    padding-left: 15%;
-}
-
-.box-kylo {
-    width: 80vw;
-    height: 100%;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
+.img-name-star {
+    width: 23.802vw;
     position: absolute;
-    top: 12%;
+    top:23.593vw;
+    left: 19.062vw;
+}
+.img-name-wars {
+    width: 26.093vw;
+    position: absolute;
+    top:23.593vw;
+    right: 9.114vw;
+}
+.img-kylo {
+    width: 70.468vw;
+    position: absolute;
+    top: 0;
+    left: 9.99vw;
     z-index: 1;
 }
-
 .img-star-wars {
     width: 26.1vw;
 }
-
-.img-kylo {
-    width: 70.4vw;
-}
-
 .img-legion {
     width: 9.1vw;
     position: absolute;
     bottom: 0;
     right: 11.6%;
 }
+/*temporary*/
+.section-start-game{
+    width: 100%;
+    height: 75vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url("./assets/sta\ uo\ robot.png");
+    background-size: 42.369vw 101.58%;
+    background-repeat: no-repeat;
+}
+.container-start-game{
+    width: 78.229vw;
+    height: 33.072vw;
+    border-bottom:#707070 0.260vw solid;
+    padding: 0 0 5.572vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    top: 0;
+    left: 14.479vw;
+}
+.start-game-box{
+    width: 20.729vw;
+    height: 30.416vw;
+    display: flex;
+    position: absolute;
+    bottom:5.512vw;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("./assets/strom trupe red.png");
+    background-size: 100%;
+    z-index: 1;
+}
+.start-game-text-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.start-game-title{
+    width:10.677vw;
+    position: absolute;
+    top:04.166vw;
+    font-size: 2.604vw;
+    font-weight:600;
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff;
 
+}
+.start-game-txt{
+    width: 17.343vw;
+    position: absolute;
+    top: 14.895vw;
+    font-size: 1.041vw;
+    font-weight: 300;
+    line-height: 1.406vw;
+    vertical-align:top;
+    color:#fff;
+}
+.dwonload-start-game-btn{
+    width: 10.416vw;
+    height: 2.604vw;
+    border: 0.104vw solid #FFFFFF;
+    position: absolute;
+    top: 22.708vw;
+    border-radius: 5px;
+    font-size: 1.041vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+.footnote{
+    width: 06.354vw;
+    position: absolute;
+    top: 26.718vw;
+    font-size: 00.520vw;
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: 0.885vw;
+    text-align: left;
+    color:#FFFFFF;
+}
+.box-aboult-the-game{
+    width: 49.479vw;
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    right: 0;
+    bottom:5.512vw;
+}
+.box-aboult-the-game img{
+    width: 20.729vw;
+    height: 12.968vw;
+    margin: 0.520vw 0 0 0;
+}
+.title-about-the-game{
+    width: 11.250vw;
+    font-size: 1.562vw;
+    font-weight: 700;
+    line-height: 2.135vw;
+    text-align: left;
+    text-transform: uppercase;
+}
+.txt-box-about-the-game{
+    margin: 0 0.833vw 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.txt-about-the-game{
+    font-size: 1.041vw;
+    line-height: 1.406vw;
+    text-align: right;
+}
+.line-about-the-game{
+    width: 9.114vw;
+    height: 0px;
+    border: 0.078vw #000 solid;
+}
+.contaoner-game-structure{
+    width: 78.229vw;
+    height: 41.927vw;
+    position: relative;
+    left: 14.479vw;
+}
+.img-lord-sifh{
+    width: 44.062vw;
+    position: absolute;
+    top: 1.406vw;
+}
+.box-game-structure{
+    width: 26.927vw;
+    height: 29.479vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    top: 4.791vw;
+    right: 21.562vw;
+}
+.game-structure-title{
+    width: 20.625vw;
+    font-size: 3.645vw;
+    font-family: "Libertad-Medium";
+    font-weight:400 ;
+    line-height: 3.645vw;
+    text-align: right;
+    text-transform: uppercase;
+    color:#000000;
+}
+.game-structure-blonder-title{
+    font-family: "sovereign";
+    font-size: 3.645vw;
+    font-weight:400;
+    line-height: 3.645vw;
+    text-align: right;
+    text-transform: uppercase;
+    color:#000000;
+}
+.game-structure-list-txt{
+    width: 100%;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1.562vw;
+    line-height: 2.135vw;
+    text-align: right;
+}
+.game-structure-list-txt:hover{
+    background-color: #D74430;
+}
+.img-rey{
+    width: 20.729vw;
+    position: absolute;
+    top: 6.302vw;
+    right: 0;
+}
+.section-attributes{
+    width: 100%;
+    height: 122.135vw;
+    background-color: #2D2D2D;
+}
